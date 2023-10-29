@@ -13,11 +13,14 @@ class MainApp extends StatelessWidget {
       home: Scaffold(
         body: Container(
           decoration: const BoxDecoration(
-            gradient: LinearGradient(colors: [
-              Color.fromRGBO(0, 0, 0, 1),
-              Color.fromRGBO(13, 13, 13, 1),
-            ]),
-          ),
+              gradient: LinearGradient(
+            colors: [
+              Color.fromARGB(255, 26, 2, 80),
+              Color.fromARGB(255, 45, 7, 98),
+            ],
+            begin: Alignment.topLeft,
+            end: Alignment.bottomRight,
+          )),
           child: const Center(
             child: Text('Hello World!'),
           ),
