@@ -9,7 +9,7 @@ class MainApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
+    return const MaterialApp(
       home: Scaffold(
         body: GradientContainer(),
       ),
@@ -18,6 +18,8 @@ class MainApp extends StatelessWidget {
 }
 
 class GradientContainer extends StatelessWidget {
+  const GradientContainer({super.key});
+
   @override
   Widget build(context) {
     return Container(
